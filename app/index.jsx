@@ -46,6 +46,12 @@ export default function App() {
               containerStyles="w-full mt-7"
             />
 
+<CustomButton 
+              title="home"
+              handlePress={() => router.push('/home')}
+              containerStyles="w-full mt-7"
+            />
+
 
         </View>
 
