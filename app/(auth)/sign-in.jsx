@@ -45,7 +45,7 @@ const SignIn
       <ScrollView>
         <View className="w-full justify-center min-h-[82vh] px-4 my-6">
           <Image source={images.logo}
-          resizeMode='contain' className="w-[115px] h-[35px]" />
+          resizeMode='contain' className="w-[200px] h-[100px]" />
 
           <Text className="text-2xl text-secondary text-semibold mt-10 font-psemibold">
             Log in
