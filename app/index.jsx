@@ -41,7 +41,7 @@ export default function App() {
             </View>
 
             {<Text className="text-sm font-pregular text-light mt-7 text-center" >
-              intro description here idk
+              Make meal prep easy and interactive!
             </Text>}
 
             <CustomButton 

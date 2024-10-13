@@ -1,10 +1,35 @@
 import { View, Text } from 'react-native'
-import React from 'react'
-import {Link, Redirect, router} from 'expo-router';
+import React, { useState } from 'react';
+import {Link, Redirect, router, useRouter} from 'expo-router';
 import {SafeAreaView } from 'react-native-safe-area-context'
 import { Calendar } from 'react-native-calendars'
 
 const home = () => {
+  const router = useRouter();
+  const [selected, setSelected] = useState([]);
+  /*function toDay(selected){
+    console.log('selected day', selected);
+
+    router.push({
+      pathname: '../day',
+      params: {
+        day: selected,
+      }
+    });
+  */
+ const toDay = (day) => {
+    setSelected(day.dateString);
+    router.push({
+      pathname: '../day',
+      params: {
+        day: day.dateString,
+      }
+    });
+  
+
+    
+  };
+
   return (
     <SafeAreaView className="bg-primary justify-center text-center min-h-[85vh] h-full"
 
@@ -37,7 +62,12 @@ const home = () => {
           textSectionTitleColor:'#5FB53F',
           monthTextColor:'#FF9C01',
         }}
-        onDayPress={() => router.push('../day')}
+        onDayPress={
+          toDay
+        }
+        /*markedDates={{
+          [selected]:{marked: true, disableTouchEvent: true, selectedDotColor:'orange'}
+        }}*/
          />
       </View>
     </SafeAreaView>

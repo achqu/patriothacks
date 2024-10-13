@@ -27,7 +27,7 @@ const TabsLayout = () => {
             screenOptions ={{
                 tabBarShowLabel: false,
                 tabBarActiveTintColor: '#5FB53F',
-                tabBarInactiveTintColor: '#d3edab',
+                tabBarInactiveTintColor: '#FF9C01',
                 tabBarStyle:{
                     backgroundColor: '#FEFAE0',
                     borderTopWidth: 5,
@@ -59,7 +59,7 @@ const TabsLayout = () => {
                     headerShown: false,
                     tabBarIcon: ({ color, focused}) => (
                         <TabIcon
-                            icon = {icons.home}
+                            icon = {icons.plus}
                             color = {color}
                             name = "Fridge"
                             focused = {focused}
@@ -74,7 +74,7 @@ const TabsLayout = () => {
                     headerShown: false,
                     tabBarIcon: ({ color, focused}) => (
                         <TabIcon
-                            icon = {icons.home}
+                            icon = {icons.bookmark}
                             color = {color}
                             name = "Meals"
                             focused = {focused}
