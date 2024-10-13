@@ -9,7 +9,7 @@ const meals = () => {
   return (
     <SafeAreaView className = "bg-primary h-full">
     <View className= "p-5 justify-center items-center">
-    <Text className="font-pmedium text-3xl text-secondary-200">
+    <Text className="font-pmedium text-3xl text-secondary-100">
                     meals
                     </Text>
       

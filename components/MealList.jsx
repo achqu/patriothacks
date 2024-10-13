@@ -27,7 +27,7 @@ export default function MealList() {
   // Render MealList Component
   return (
     <View className="flex flex-col items-center px-4 pb-5">
-      <View className = "flex flex-row  rounded-lg border border-secondary">
+      <View className = "flex flex-row  rounded-lg border border-secondary-100">
       <View className="flex flex-row items-center flex-4 p-1 py-2" style={{ width: "80%"}}>
       <TextInput
         value={text}
@@ -39,7 +39,7 @@ export default function MealList() {
       
       </View>
       
-      <Button title="+" onPress={addTask} color="#FF9C01"/>
+      <Button title="+" onPress={addTask} color="#5FB53F"/>
       
       
       </View>
