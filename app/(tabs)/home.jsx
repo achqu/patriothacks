@@ -27,7 +27,7 @@ const home = () => {
           todayTextColor: '#88c25b',
           'stylesheet.day.basic':{
             'base':{
-              width:100,
+              width:50,
               height:80
             }
           }

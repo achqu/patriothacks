@@ -36,9 +36,9 @@ export default function App() {
 
             </View>
 
-            <Text className="text-sm font-pregular text-light mt-7 text-center">
+            {<Text className="text-sm font-pregular text-light mt-7 text-center">
               intro description here idk
-            </Text>
+            </Text>}
 
             <CustomButton 
               title="Continue with Email"
