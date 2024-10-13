@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { View, TextInput, Text, Button } from 'react-native';
-import ListItem from './ListItem';
-import {Link, Redirect, router} from 'expo-router';
+import InItem from './InItem';
 
 
-export default function MealList() {
+export default function InList() {
   // State Hooks
   const [meals, setMeals] = useState([
   ]);
@@ -24,29 +23,29 @@ export default function MealList() {
   function toggleCompleted(id) {
     setMeals(meals.map(task => (task.id === id ? { ...task, completed: !task.completed } : task)));
   }
-  // Render MealList Component
+  // Render InList Component
   return (
     <View className="flex flex-col items-center px-4 pb-5">
-      <View className = "flex flex-row  rounded-lg border border-secondary-100">
+      <View className = "flex flex-row  rounded-lg border border-secondary">
       <View className="flex flex-row items-center flex-4 p-1 py-2" style={{ width: "80%"}}>
       <TextInput
         value={text}
         onChangeText={setText}
-        placeholder=" New Meal"
+        placeholder="Add ingredient"
         style={{width:"100%"}}
         
       />
       
       </View>
       
-      <Button title="+" onPress={addTask} color="#5FB53F"/>
+      <Button title="+" onPress={addTask} color="#FF9C01"/>
       
       
       </View>
       
 
       {meals.map(task => (
-        <ListItem
+        <InItem
           key={task.id}
           task={task}
           deleteTask={deleteTask}
