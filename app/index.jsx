@@ -24,7 +24,7 @@ export default function App() {
             />
 
             <View className="relative mt-5">
-              <Text className="text-3xl text-white
+              <Text className="text-3xl text-secondary-100
               font-bold text-center">
                 Welcome to{' '}
                 <Text className="text-secondary-200">
@@ -36,13 +36,19 @@ export default function App() {
 
             </View>
 
-            <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
+            <Text className="text-sm font-pregular text-light mt-7 text-center">
               intro description here idk
             </Text>
 
             <CustomButton 
               title="Continue with Email"
               handlePress={() => router.push('/sign-in')}
+              containerStyles="w-full mt-7"
+            />
+
+<CustomButton 
+              title="home"
+              handlePress={() => router.push('/home')}
               containerStyles="w-full mt-7"
             />
 
