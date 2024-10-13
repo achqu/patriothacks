@@ -38,17 +38,19 @@ const SignUp
 
 
   return (
-    <SafeAreaView className="bg-primary-h-full">
-      <ScrollView>
+    <SafeAreaView className="bg-primary h-full">
+      <ScrollView class>
         <View className="w-full justify-center min-h-[82vh] px-4 my-6">
           <Image source={images.logo}
-          resizeMode='contain' className="w-[115px] h-[35px]" />
+          className="w-[200px] h-[100px]"
+          resizeMode='contain'  />
 
-          <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">
+          <Text className="text-2xl text-secondary-200 text-semibold mt-10 font-psemibold">
             Sign up to Platesaver
           </Text>
 
           <FormField 
+            
             title="Username"
             value={form.username}
             handleChangeText={(e) => setForm({ ...form,
