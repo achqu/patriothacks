@@ -46,7 +46,7 @@ const SignUp
           resizeMode='contain'  />
 
           <Text className="text-2xl text-secondary-200 text-semibold mt-10 font-psemibold">
-            Sign up to Platesaver
+            Sign up to platesaver
           </Text>
 
           <FormField 
