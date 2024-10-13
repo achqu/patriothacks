@@ -8,7 +8,7 @@ const logout = () => {
 
 const Profile = () => {
   return (
-    <View className="w-full justify-center items-center mt-6 mb-12 px-4">
+    <View className="bg-primary w-full justify-center items-center mt-6 mb-12 px-4">
       <TouchableOpacity 
       className="w-full items-end mb-10"
       onPress={logout}>

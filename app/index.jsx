@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Image, ScrollView, Text, View } from 'react-native';
+import { Image, ScrollView, Text, View, Button } from 'react-native';
 import {Link, Redirect, router} from 'expo-router';
 import { SafeAreaView} from 'react-native-safe-area-context';
 import {images} from '../constants'
@@ -13,7 +13,7 @@ export default function App() {
         <View className= "w-full justify-center items-center min-h-[85vh] px-4">
             <Image 
               source={images.logo}
-              className="w-[130px] h-[84px]"
+              className="w-[200px] h-[100px] "
               resizeMode="contain"
             />
 
@@ -36,7 +36,7 @@ export default function App() {
 
             </View>
 
-            {<Text className="text-sm font-pregular text-light mt-7 text-center">
+            {<Text className="text-sm font-pregular text-light mt-7 text-center" >
               intro description here idk
             </Text>}
 
@@ -45,11 +45,16 @@ export default function App() {
               handlePress={() => router.push('/sign-in')}
               containerStyles="w-full mt-7"
             />
+          <Text></Text>
 
-<CustomButton 
-              title="home"
-              handlePress={() => router.push('/home')}
-              containerStyles="w-full mt-7"
+<Button 
+            
+              title="Skip"
+              //color="red"
+              color="#FF9C01"
+              onPress={() => router.push('/home')}
+              
+
             />
 
 
